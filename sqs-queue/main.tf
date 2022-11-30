@@ -1,3 +1,8 @@
+terraform {
+  # will be filled in by terragrunt
+  backend "s3" {}
+}
+
 provider "aws" {
   region = var.aws_region
 }
