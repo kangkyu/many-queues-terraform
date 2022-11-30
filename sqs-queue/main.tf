@@ -1,6 +1,6 @@
 terraform {
   # will be filled in by terragrunt
-  backend "s3" {}
+  backend "remote" {}
 }
 
 provider "aws" {
