@@ -1,7 +1,7 @@
-terraform {
-  # will be filled in by terragrunt
-  backend "remote" {}
-}
+# terraform {
+#   # will be filled in by terragrunt
+#   backend "remote" {}
+# }
 
 provider "aws" {
   region = var.aws_region
