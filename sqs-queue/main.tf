@@ -30,8 +30,8 @@ resource "aws_sqs_queue" "test_queue" {
 
 resource "aws_sqs_queue" "test_queue_deadletter" {
   name = "deadletter-queue-${var.sqs_prefix}-${var.env_name}"
-  redrive_allow_policy = jsonencode({
-    redrivePermission = "byQueue",
-    sourceQueueArns   = [aws_sqs_queue.test_queue.arn]
-  })
+  # redrive_allow_policy = jsonencode({
+  #   redrivePermission = "byQueue",
+  #   sourceQueueArns   = [aws_sqs_queue.test_queue.arn]
+  # })
 }
